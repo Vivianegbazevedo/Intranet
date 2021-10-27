@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
-}
+  }
 .sidebar{
   position: fixed;
   left: 0;
@@ -223,14 +223,17 @@
   background: none;
 }
 .home-section{
+  background-image: url(Imagem/IMG-20211026-WA0006.jpg);
   position: relative;
-  background: #E4E9F7;
+  background-attachment: fixed;;
   min-height: 100vh;
   top: 0;
   left: 78px;
   width: calc(100% - 78px);
   transition: all 0.5s ease;
   z-index: 2;
+
+
 }
 .sidebar.open ~ .home-section{
   left: 250px;
@@ -248,3 +251,4 @@
     display: none;
   }
 }
+
