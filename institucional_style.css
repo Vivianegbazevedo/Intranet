@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.div_inst{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+#viasul_27{
+    height: 1000px;
+    width: 1000px;
+    
+}
