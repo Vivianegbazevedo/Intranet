@@ -234,8 +234,9 @@
       cursor: pointer;
 }
 .home-section{
+  background-image: url(Imagem/IMG-20211026-WA0006.jpg);
   position: relative;
-  background: #E4E9F7;
+  background-attachment: fixed;
   min-height: 100vh;
   top: 0;
   left: 78px;
