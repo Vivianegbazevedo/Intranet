@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Yeseva+One&display=swap');
+
+body{
+  background-image: url(/imagens/concessionária.png);
+}
+.container{
+  font-family: 'Andada Pro', serif;
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+h3 {
+  margin-top: 10px;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid black;
+  padding: 1px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+.a {
+  color: #2C2C2C;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  border: none;
+  box-shadow: none;
+  width: 100px;
+}
+
+.btn-secondary:hover {
+
+  box-shadow: none;
+
+}
+
+.btn-secondary:focus {
+
+  box-shadow: none;
+
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.links {
+  color: rgb(255, 255, 255);
+  font-size: 27px;
+  font-family: 'Andada Pro', serif;
+  text-decoration: none;
+}
+.img{
+  border-radius:5px;
+
+}
+

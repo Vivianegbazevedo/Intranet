@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão</title>
+
+
+  <!--Gab-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
+  <!--Gab-->
+
+  <link rel="stylesheet" href="/CSS/menu.css">
+
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="Artboard_2_(2)[1].ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+    integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+</head>
+
+
+
+<style>
+  body {
+    height: 100%;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+
+  }
+
+  .filterDiv {
+    float: left;
+    background-color: #ced4db;
+    font-size: 0.7em;
+    width: 45%;
+    line-height: 25px;
+    text-align: start;
+    margin: 1px;
+    display: none;
+    padding-left: 1px;
+    font-family: 'Andada Pro', serif;
+
+
+  }
+
+  .filterDiv:hover {
+    background-color: #f9f9fa;
+
+  }
+
+  .filterDiv a {
+    padding-left: 4px;
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .filterDiv a :hover {
+    color: blue;
+
+  }
+
+  .show {
+    display: block;
+
+  }
+
+  .container {
+    margin-top: 20px;
+    overflow: hidden;
+    font-family: 'Andada Pro', serif;
+
+  }
+
+  #myBtnContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    padding: 10px 14px;
+    margin: 3px;
+    background-color: #212529;
+    color: #ced4db;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  .btn:hover {
+    background-color: #495057;
+  }
+
+  .btn.active {
+    background-color: #495057;
+    color: white;
+  }
+</style>
+
+<body style="background-image: url('/imagens/Imagem_home/foto.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: scroll;
+overflow-x: hidden;
+font-family: 'Andada-Pro', serif;
+">
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class=></i>
+        <!--linha para inserir ícone-->
+        <div class="logo_name"><img src="/imagens/grupo via 1.png" width="100" alt="logomarca"></div>
+        <i class='bx bx-menu' id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li id="Página inicial">
+          <a href="/HTML/Menu.html">
+            <i class='bx bx-home'></i>
+            <span class="links_name">Página Inicial</span>
+          </a>
+          <span class="tooltip">Página Inicial</span>
+        </li>
+
+
+        <li id=Institucional>
+          <a href="/HTML/institucional.html" target="_top">
+            <i class='bx bxs-institution'></i>
+            <span class="links_name">Institucional</span>
+
+          </a>
+          <span class="tooltip">Institucional</span>
+        </li>
+        <li>
+          <a href="/HTML/nosso.html">
+            <i class="bx bxs-briefcase"></i>
+            <span class="links_name">Nosso Negócio</span>
+          </a>
+          <span class="tooltip">Nosso Negócio</span>
+        </li>
+        <li>
+          <a href="/HTML/nossagente.html">
+            <i class='bx bx-user'></i>
+            <span class="links_name">Nossa Gente</span>
+          </a>
+          <span class="tooltip">Nossa Gente</span>
+        </li>
+        <li>
+          <a href="/HTML/gestão.html">
+            <i class='bx bx-trending-up'></i>
+            <span class="links_name">Gestão</span>
+          </a>
+          <span class="tooltip">Gestão</span>
+        </li>
+        <li>
+          <a href="/HTML/eventos.html">
+            <i class='bx bxs-calendar'></i>
+            <span class="links_name">Eventos</span>
+          </a>
+          <span class="tooltip">Eventos</span>
+        </li>
+        </li>
+      </ul>
+    </div>
+    </section>
+
+    <section id="home" class="d-flex">
+      <!--home -->
+      <div class="container align-self-center">
+        <!--container -->
+        <div class="row">
+          <!--row -->
+          <div class="col-md-6 capa">
+          </div>
+        </div>
+        <!--/row -->
+      </div>
+      <!--/container -->
+    </section>
+    <!-- Fim Sidebar -->
+
+
+    <h2>Documentos</h2>
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('TI')"> TI</button>
+      <button class="btn" onclick="filterSelection('Patrimônio')"> Patrimônio</button>
+      <button class="btn" onclick="filterSelection('Proc_Compras_Patrimonio')"> Procedimentos Patrimônio</button>
+      <button class="btn" onclick="filterSelection('Geral / Diretoria')"> Geral / Diretoria</button>
+      <button class="btn" onclick="filterSelection('Financeiro')"> Financeiro</button>
+      <button class="btn" onclick="filterSelection('DHO')"> DHO</button>
+      <button class="btn" onclick="filterSelection('Compras')"> Compras</button>
+      <button class="btn" onclick="filterSelection('ADM Pessoal')"> ADM Pessoal</button>
+      <button class="btn" onclick="filterSelection('Logotipos')"> Logotipos</button>
+      <button class="btn" onclick="filterSelection('Termos')"> Termos</button>
+      <button class="btn" onclick="filterSelection('CheckList')"> CheckList</button>
+      <button class="btn" onclick="filterSelection('Dados Empresa')"> Dados Empresa</button>
+
+
+
+    </div>
+
+    <div class="container">
+
+      <!--TI-->
+
+      <div class="filterDiv TI"><a href="Documentos/TI/FM-0001-TIC - TERMO INDIVIDUAL DE RESPONSABILIDADE.pdf"
+          download="FM-0001-TIC - TERMO INDIVIDUAL DE RESPONSABILIDADE.pdf" type="aplication/pdf">FM-0001-TIC - TERMO
+          INDIVIDUAL DE RESPONSABILIDADE</a></div>
+
+      <!--Patrimônio-->
+
+      <div class="filterDiv Patrimônio"><a href="Documentos/PATRIMONIO/FP 9.8.1 - Ficha  Cadastro Patrimonial V001.pdf"
+          download="FP 9.8.1 - Ficha  Cadastro Patrimonial V001.pdf" type="aplication/pdf">FP 9.8.1 - Ficha Cadastro
+          Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Patrimônio"><a
+          href="Documentos/PATRIMONIO/FP 9.8.2 - Termo Recebimento Bem Patrimonial V001.pdf"
+          download="FP 9.8.2 - Termo Recebimento Bem Patrimonial V001.pdf" type="aplication/pdf">FP 9.8.2 - Termo
+          Recebimento Bem Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Patrimônio"><a
+          href="Documentos/PATRIMONIO/FP 9.8.3 - Planejamento Compra Imobilizado V001.pdf"
+          download="FP 9.8.3 - Planejamento Compra Imobilizado V001.pdf" type="aplication/pdf">FP 9.8.3 - Planejamento
+          Compra Imobilizado V001.pdf</a></div>
+
+      <div class="filterDiv Patrimônio"><a
+          href="Documentos/PATRIMONIO/FP 9.8.4 - Solicitação Transferência Ativo V001.pdf"
+          download="FP 9.8.4 - Solicitação Transferência Ativo V001.pdf" type="aplication/pdf">FP 9.8.4 - Solicitação
+          Transferência Ativo V001.pdf</a></div>
+
+      <div class="filterDiv Patrimônio"><a
+          href="Documentos/PATRIMONIO/FP 9.8.5 - Solicitação Avaliação Bens Baixa Conserto V001.pdf"
+          download="FP 9.8.5 - Solicitação Avaliação Bens Baixa Conserto V001.pdf" type="aplication/pdf">FP 9.8.5 -
+          Solicitação Avaliação Bens Baixa Conserto V001.pdf</a></div>
+
+      <div class="filterDiv Patrimônio"><a href="Documentos/PATRIMONIO/FP 9.8.6 - Termo Baixa V001.pdf"
+          download="FP 9.8.6 - Termo Baixa V001.pdf" type="aplication/pdf">FP 9.8.6 - Termo Baixa V001.pdf</a></div>
+
+      <div class="filterDiv Patrimônio"><a
+          href="Documentos/PATRIMONIO/FP 9.8.7 - Autorizacão Desconto Folha Pagamento V001.pdf"
+          download="FP 9.8.7 - Autorizacão Desconto Folha Pagamento V001.pdf" type="aplication/pdf">FP 9.8.7 -
+          Autorizacão Desconto Folha Pagamento V001.pdf</a></div>
+
+      <!-- PROCEDIMENTO COMPRAS PATRIMÔNIO -->
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.1.4 - Cadastro Bem Patrimonial Sistema Controle V001.pdf"
+          download="FR 8.1.4 - Cadastro Bem Patrimonial Sistema Controle V001.pdf" type="aplication/pdf">FR 8.1.4 -
+          Cadastro Bem Patrimonial Sistema Controle V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.1.5 - Cadastro Bem Patrimonial Sistema Compras V001.pdf"
+          download="FR 8.1.5 - Cadastro Bem Patrimonial Sistema Compras V001.pdf" type="aplication/pdf">FR 8.1.5 -
+          Cadastro Bem Patrimonial Sistema Compras V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.1.6 - Registro Alteração de Tombo V001.pdf"
+          download="FR 8.1.6 - Registro Alteração de Tombo V001.pdf" type="aplication/pdf">FR 8.1.6 - Registro Alteração
+          de Tombo V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.2.4.1 - Planejamento Compra Bem Patrimonial V001.pdf"
+          download="FR 8.2.4.1 - Planejamento Compra Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.2.4.1 -
+          Planejamento Compra Bem Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.2.4.2 - Requisição Compra Bem Patrimonial V001.pdf"
+          download="FR 8.2.4.2 - Requisição Compra Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.2.4.2 -
+          Requisição Compra Bem Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.2.4.3 - Cotação Compra Bem Patrimonial V001.pdf"
+          download="FR 8.2.4.3 - Cotação Compra Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.2.4.3 - Cotação
+          Compra Bem Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.2.4.4 - Aprovação Compra Bem Patrimonial V001.pdf"
+          download="FR 8.2.4.4 - Aprovação Compra Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.2.4.4 - Aprovação
+          Compra Bem Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.2.4.5 - Compra Bem Patrimonial V001.pdf"
+          download="FR 8.2.4.5 - Compra Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.2.4.5 - Compra Bem
+          Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.2.4.6 - Comprar Bem Patrimonial - Benfeitoria V001.pdf"
+          download="FR 8.2.4.6 - Comprar Bem Patrimonial - Benfeitoria V001.pdf" type="aplication/pdf">FR 8.2.4.6 -
+          Comprar Bem Patrimonial - Benfeitoria V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.3.3.1 - Planej Compra Bem Patrimonial  - Pq Tec V001.pdf"
+          download="FR 8.3.3.1 - Planej Compra Bem Patrimonial  - Pq Tec V001.pdf" type="aplication/pdf">FR 8.3.3.1 -
+          Planej Compra Bem Patrimonial - Pq Tec V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.3.3.2 - Compra Bem Patrimonial  - Pq Tec V001.pdf"
+          download="FR 8.3.3.2 - Compra Bem Patrimonial  - Pq Tec V001.pdf" type="aplication/pdf">FR 8.3.3.2 - Compra
+          Bem Patrimonial - Pq Tec V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.4.10 - Movimentação Bem Patrimonial Avaria V001.pdf"
+          download="" type="aplication/pdf">FR 8.3.3.2 - Compra Bem Patrimonial - Pq Tec V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.4.11 - Depreciação Amortização Bem Patrimonial V001.pdf"
+          download="FR 8.4.11 - Depreciação Amortização Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.4.11 -
+          Depreciação Amortização Bem Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.4.12 - Baixa Bem Patrimonial V001.pdf"
+          download="FR 8.4.12 - Baixa Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.4.12 - Baixa Bem Patrimonial
+          V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.4.7 - Entrada Bem Patrimonial Aquisição V001.pdf"
+          download="FR 8.4.7 - Entrada Bem Patrimonial Aquisição V001.pdf" type="aplication/pdf">FR 8.4.7 - Entrada Bem
+          Patrimonial Aquisição V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.4.8 - Movimentação Bem Patrimonial  V001.pdf"
+          download="FR 8.4.8 - Movimentação Bem Patrimonial  V001.pdf" type="aplication/pdf">FR 8.4.8 - Movimentação Bem
+          Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.4.9 - Movimentação Responsáveis Bens Patrimoniais V001.pdf"
+          download="FR 8.4.9 - Movimentação Responsáveis Bens Patrimoniais V001.pdf" type="aplication/pdf">FR 8.4.9 -
+          Movimentação Responsáveis Bens Patrimoniais V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/FR 8.5.3 - Inventário Bem Patrimonial V001.pdf"
+          download="FR 8.5.3 - Inventário Bem Patrimonial V001.pdf" type="aplication/pdf">FR 8.5.3 - Inventário Bem
+          Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/MP 8.2.4 - Compra Bem Patrimonial V001.pdf"
+          download="MP 8.2.4 - Compra Bem Patrimonial V001.pdf" type="aplication/pdf">MP 8.2.4 - Compra Bem Patrimonial
+          V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/MP 8.3.3 - Compra Bem Patrimonial  - Pq Tec V001.pdf"
+          download="MP 8.3.3 - Compra Bem Patrimonial  - Pq Tec V001.pdf" type="aplication/pdf">MP 8.3.3 - Compra Bem
+          Patrimonial - Pq Tec V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/NP 8.1 - Cadastro Bem Patrimonial  V001.pdf"
+          download="NP 8.1 - Cadastro Bem Patrimonial  V001.pdf" type="aplication/pdf">NP 8.1 - Cadastro Bem Patrimonial
+          V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/NP 8.2 - Compra Bem Patrimonial V001.pdf"
+          download="NP 8.2 - Compra Bem Patrimonial V001.pdf" type="aplication/pdf">NP 8.2 - Compra Bem Patrimonial
+          V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/NP 8.3 - Compra Item Parque Tecnológico V001.pdf"
+          download="NP 8.3 - Compra Item Parque Tecnológico V001.pdf" type="aplication/pdf">NP 8.3 - Compra Item Parque
+          Tecnológico V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/NP 8.4 - Movimentação Bem Patrimonial  V001.pdf"
+          download="NP 8.4 - Movimentação Bem Patrimonial  V001.pdf" type="aplication/pdf">NP 8.4 - Movimentação Bem
+          Patrimonial V001.pdf</a></div>
+
+      <div class="filterDiv Proc_Compras_Patrimonio"><a
+          href="Documentos/PROCEDIMENTO_COMPRAS_PATRIMONIO/NP 8.5 - Iventário Bem Patrimonial V001.pdf"
+          download="NP 8.5 - Iventário Bem Patrimonial V001.pdf" type="aplication/pdf">NP 8.5 - Iventário Bem
+          Patrimonial V001.pdf</a></div>
+
+      <!--Geral / Diretoria-->
+
+      <div class="filterDiv Geral / Diretoria"><a
+          href="Documentos/GERAL_DIRETORIA/FM-0001-DG - PRESTAÇAO DE CONTAS DE VIAGENS.xls"
+          download="FM-0001-DG - PRESTAÇAO DE CONTAS DE VIAGENS.xls" type="aplication/xlsx">FM-0001-DG - PRESTAÇAO DE
+          CONTAS DE VIAGENS.xls</a></div>
+
+      <div class="filterDiv Geral / Diretoria"><a
+          href="Documentos/GERAL_DIRETORIA/FM-0002-DG - SOLICITAÇÃO DE VIAGEM.xlsx"
+          download="FM-0002-DG - SOLICITAÇÃO DE VIAGEM.xlsx" type="aplication/xlsx">FM-0002-DG - SOLICITAÇÃO DE
+          VIAGEM.xlsx</a></div>
+
+      <div class="filterDiv Geral / Diretoria"><a
+          href="Documentos/GERAL_DIRETORIA/FM-0003-DG - SOLICITAÇÃO DE ADIANTAMENTO.xls"
+          download="FM-0003-DG - SOLICITAÇÃO DE ADIANTAMENTO.xls" type="aplication/xlsx">FM-0003-DG - SOLICITAÇÃO DE
+          ADIANTAMENTO.xls</a></div>
+
+      <div class="filterDiv Geral"><a href="Documentos/PROCEDIMENTOS DIRETORIA/VS_Protocolo de Segurança - Final.pdf"
+          download="VS_Protocolo de Segurança - Final.pdf" type="aplication/pdf">VS_Protocolo de Segurança -
+          Final.pdf</a></div>
+
+      <div class="filterDiv Geral"><a
+          href="Documentos/PROCEDIMENTOS DIRETORIA/VSP-PS-0001-DG - Política de Viagem_R4.doc"
+          download="VSP-PS-0001-DG - Política de Viagem_R4.doc" type="aplication/doc">VSP-PS-0001-DG - Política de
+          Viagem_R4.doc</a></div>
+
+      <!--Financeiro-->
+
+      <div class="filterDiv Financeiro"><a href="Documentos/FINANCEIRO/FM-0001-FIN- FICHA CADASTRAL CLIENTES PJ.xls"
+          download="FM-0001-FIN- FICHA CADASTRAL CLIENTES PJ.xls" type="aplication/xls">FM-0001-FIN- FICHA CADASTRAL
+          CLIENTES PJ.xls</a></div>
+
+      <div class="filterDiv Financeiro"><a
+          href="Documentos/FINANCEIRO/FM-0002 - FIN - FP - Solicitação de Adiantamentos.doc"
+          download="FM-0002 - FIN - FP - Solicitação de Adiantamentos.doc" type="aplication/doc">FM-0002 - FIN - FP -
+          Solicitação de Adiantamentos.doc</a></div>
+
+      <div class="filterDiv Financeiro"><a
+          href="Documentos/FINANCEIRO/FM-0003 - FIN - G007- Cadastro Prestador de Serviços PJ - Versão Final.doc"
+          download="FM-0003 - FIN - G007- Cadastro Prestador de Serviços PJ - Versão Final.doc"
+          type="aplication/doc">FM-0003 - FIN - G007- Cadastro Prestador de Serviços PJ - Versão Final.doc</a></div>
+
+      <!--DHO-->
+
+      <div class="filterDiv DHO"><a href="Documentos/DHO/FM-0001-DHO - REQUISIÇÃO DE COLABORADOR.xls"
+          download="FM-0001-DHO - REQUISIÇÃO DE COLABORADOR.xls" type="aplication/xls">FM-0001-DHO - REQUISIÇÃO DE
+          COLABORADOR.xls</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/DHO/FM-0002-DHO - MOVIMENTAÇÃO DE COLABORADOR.xlsx"
+          download="FM-0002-DHO - MOVIMENTAÇÃO DE COLABORADOR.xlsx" type="aplication/xlsx">FM-0002-DHO - MOVIMENTAÇÃO DE
+          COLABORADOR.xlsx</a></div>
+
+      <div class="filterDiv DHO"><a
+          href="Documentos/DHO/FM-0003-DHO - FICHA INSCRIÇÃO PROGRAMA INCENTIVO À EDUCAÇÃO.xls"
+          download="FM-0003-DHO - FICHA INSCRIÇÃO PROGRAMA INCENTIVO À EDUCAÇÃO.xls" type="aplication/xls">FM-0003-DHO -
+          FICHA INSCRIÇÃO PROGRAMA INCENTIVO À EDUCAÇÃO.xls</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/DHO/FM-0004 -DHO - FICHA INSCRIÇÃO RECRUTAMENTO INTERNO.xlsx"
+          download="FM-0004 -DHO - FICHA INSCRIÇÃO RECRUTAMENTO INTERNO.xlsx" type="aplication/xlsx">FM-0004 -DHO -
+          FICHA INSCRIÇÃO RECRUTAMENTO INTERNO.xlsx</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/DHO/FM-0006-DHO - MODELO DE PROCEDIMENTO.doc"
+          download="FM-0006-DHO - MODELO DE PROCEDIMENTO.doc" type="aplication/doc">FM-0006-DHO - MODELO DE
+          PROCEDIMENTO.doc</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/DHO/FM-0007-DHO - AUTORIZAÇÃO DE CONTRATAÇÃO EX-FUNCIONÁRIO.xls"
+          download="FM-0007-DHO - AUTORIZAÇÃO DE CONTRATAÇÃO EX-FUNCIONÁRIO.xls" type="aplication/xls">FM-0007-DHO -
+          AUTORIZAÇÃO DE CONTRATAÇÃO EX-FUNCIONÁRIO.xls</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/DHO/FM-0008-DHO - SOLICITAÇÃO DE DESLIGAMENTO.xls"
+          download="FM-0008-DHO - SOLICITAÇÃO DE DESLIGAMENTO.xls" type="aplication/xls">FM-0008-DHO - SOLICITAÇÃO DE
+          DESLIGAMENTO.xls</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/DHO/FM-0009-DHO - FICHA DE MATRÍCULA SESC.doc"
+          download="FM-0009-DHO - FICHA DE MATRÍCULA SESC.doc" type="aplication/doc">FM-0009-DHO - FICHA DE MATRÍCULA
+          SESC.doc</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-01-Organograma.docx"
+          download="POP-DHO-01-Organograma.docx" type="aplication/doc">POP-DHO-01-Organograma.docx</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-02-Descrição de Função.docx"
+          download="POP-DHO-02-Descrição de Função.docx" type="aplication/doc">POP-DHO-02-Descrição de Função.docx</a>
+      </div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-03-Recrutamento e Seleção.docx"
+          download="POP-DHO-03-Recrutamento e Seleção.docx" type="aplication/doc">POP-DHO-03-Recrutamento e
+          Seleção.docx</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-04-Integração.docx"
+          download="POP-DHO-04-Integração.docx" type="aplication/doc">POP-DHO-04-Integração.docx</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-05-Uniforme e crachá.docx"
+          download="POP-DHO-05-Uniforme e crachá.docx" type="aplication/doc">POP-DHO-05-Uniforme e crachá.docx</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-06-EPI.docx"
+          download="POP-DHO-06-EPI.docx" type="aplication/doc">POP-DHO-06-EPI.docx</a></div>
+
+      <div class="filterDiv DHO"><a
+          href="Documentos/PROCEDIMENTOS DHO/POP-DHO-07-Avaliação do Periodo de Experiência.docx"
+          download="POP-DHO-07-Avaliação do Periodo de Experiência.docx" type="aplication/doc">POP-DHO-07-Avaliação do
+          Periodo de Experiência.docx</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-08-FCA Academy.docx"
+          download="POP-DHO-08-FCA Academy.docx" type="aplication/doc">POP-DHO-08-FCA Academy.docx</a></div>
+
+      <div class="filterDiv DHO"><a href="Documentos/PROCEDIMENTOS DHO/POP-DHO-09-Desligamento.docx"
+          download="POP-DHO-09-Desligamento.docx" type="aplication/doc">POP-DHO-09-Desligamento.docx</a></div>
+
+      <!--Compras-->
+
+      <div class="filterDiv Compras"><a href="Documentos/COMPRAS/FM-0001-COM- REQUISIÇÃO DE COMPRAS.xls"
+          download="FM-0001-COM- REQUISIÇÃO DE COMPRAS.xls" type="aplication/xls">FM-0001-COM- REQUISIÇÃO DE
+          COMPRAS.xls</a></div>
+
+      <div class="filterDiv Compras"><a href="Documentos/COMPRAS/FM-0002-COM-REQUISIÇÃO DE SERVIÇOS.xls"
+          download="FM-0002-COM-REQUISIÇÃO DE SERVIÇOS.xls" type="aplication/xls">FM-0002-COM-REQUISIÇÃO DE
+          SERVIÇOS.xls</a></div>
+
+      <div class="filterDiv Compras"><a
+          href="Documentos/COMPRAS/FM-0003- COM- SOLICITAÇÃO DE TRANSFERÊNCIA DO ATIVO.pdf"
+          download="FM-0003- COM- SOLICITAÇÃO DE TRANSFERÊNCIA DO ATIVO.pdf" type="aplication/pdf">FM-0003- COM-
+          SOLICITAÇÃO DE TRANSFERÊNCIA DO ATIVO.pdf</a></div>
+
+      <div class="filterDiv Compras"><a href="Documentos/COMPRAS/FM-0004-COM- BAIXA DE ATIVO IMOBILIZADO.pdf"
+          download="FM-0004-COM- BAIXA DE ATIVO IMOBILIZADO.pdf" type="aplication/pdf">FM-0004-COM- BAIXA DE ATIVO
+          IMOBILIZADO.pdf</a></div>
+
+      <!--ADM Pessoal-->
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0002-ADP -CANCELAMENTO DE ASSISTENCIA.doc"
+          download="FM-0002-ADP -CANCELAMENTO DE ASSISTENCIA.doc" type="aplication/doc">FM-0002-ADP -CANCELAMENTO DE
+          ASSISTENCIA.doc</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0003-ADP - MODELO DE CARTA PEDIDO DEMISSÃO.doc"
+          download="FM-0003-ADP - MODELO DE CARTA PEDIDO DEMISSÃO.doc" type="aplication/doc">FM-0003-ADP - MODELO DE
+          CARTA PEDIDO DEMISSÃO.doc</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0004 -ADP - SOLICITAÇÃO BRADESCO DENTAL.doc"
+          download="FM-0004 -ADP - SOLICITAÇÃO BRADESCO DENTAL.doc" type="aplication/doc">FM-0004 -ADP - SOLICITAÇÃO
+          BRADESCO DENTAL.doc</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0006 -ADP- PEDIDO DE DEMISSÃO PERÍODO DE EXPERIÊNCIA.doc"
+          download="FM-0006 -ADP- PEDIDO DE DEMISSÃO PERÍODO DE EXPERIÊNCIA.doc" type="aplication/doc">FM-0006 -ADP-
+          PEDIDO DE DEMISSÃO PERÍODO DE EXPERIÊNCIA.doc</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0007-ADP-DECLARAÇÃO DE CONVÍVIO MARITAL.DOC"
+          download="FM-0007-ADP-DECLARAÇÃO DE CONVÍVIO MARITAL.DOC" type="aplication/doc">FM-0007-ADP-DECLARAÇÃO DE
+          CONVÍVIO MARITAL.DOC</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0008 -ADP-SOLICITAÇÃO BRADESCO SAUDE.doc"
+          download="FM-0008 -ADP-SOLICITAÇÃO BRADESCO SAUDE.doc" type="aplication/doc">FM-0008 -ADP-SOLICITAÇÃO BRADESCO
+          SAUDE.doc</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0009-ADP-VALE TRANSPORTE SSA.doc"
+          download="FM-0009-ADP-VALE TRANSPORTE SSA.doc" type="aplication/doc">FM-0009-ADP-VALE TRANSPORTE SSA.doc</a>
+      </div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0014-ADP-BRADESCO_INCLUSÃO E EXCLUSÃO DE DEPENDENTE.doc"
+          download="FM-0014-ADP-BRADESCO_INCLUSÃO E EXCLUSÃO DE DEPENDENTE.doc"
+          type="aplication/doc">FM-0014-ADP-BRADESCO_INCLUSÃO E EXCLUSÃO DE DEPENDENTE.doc</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0018-ADP-FICHA DE ANÁLISE DE ACIDENTE DE TRABALHO (FICHA 01)-DESCRIÇÃO DE ACIDENTE.docx"
+          download="FM-0018-ADP-FICHA DE ANÁLISE DE ACIDENTE DE TRABALHO (FICHA 01)-DESCRIÇÃO DE ACIDENTE.docx"
+          type="aplication/doc">FM-0018-ADP-FICHA DE ANÁLISE DE ACIDENTE DE TRABALHO (FICHA 01)-DESCRIÇÃO DE
+          ACIDENTE.docx</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0019-ADP-FICHA DE ANÁLISE DE ACIDENTE DE TRABALHO (FICHA 02)-TIPO DE ACIDENTE.docx"
+          download="FM-0019-ADP-FICHA DE ANÁLISE DE ACIDENTE DE TRABALHO (FICHA 02)-TIPO DE ACIDENTE.docx"
+          type="aplication/doc">FM-0019-ADP-FICHA DE ANÁLISE DE ACIDENTE DE TRABALHO (FICHA 02)-TIPO DE ACIDENTE.doc</a>
+      </div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0005-ADP- SOLICITAÇÃO DE VALE-TRANSPORTE.pdf"
+          download="FM-0005-ADP- SOLICITAÇÃO DE VALE-TRANSPORTE.pdf" type="aplication/pdf">FM-0005-ADP- SOLICITAÇÃO DE
+          VALE-TRANSPORTE.pdf</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0012-ADP- CARTA ANS.pdf"
+          download="FM-0012-ADP- CARTA ANS.pdf" type="aplication/pdf">FM-0012-ADP- CARTA ANS.pdf</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0013-ADP-HAVIDA_DECLARAÇÃO DE SAUDE.pdf"
+          download="FM-0013-ADP-HAVIDA_DECLARAÇÃO DE SAUDE.pdf" type="aplication/pdf">FM-0013-ADP-HAVIDA_DECLARAÇÃO DE
+          SAUDE.pdf</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0015-ADP-BRADESCO_REEMBOLSO.pdf"
+          download="FM-0015-ADP-BRADESCO_REEMBOLSO.pdf" type="aplication/pdf">FM-0015-ADP-BRADESCO_REEMBOLSO.pdf</a>
+      </div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0016-ADP-TERMO DESCONTO SINDICAL.pdf"
+          download="FM-0016-ADP-TERMO DESCONTO SINDICAL.pdf" type="aplication/pdf">FM-0016-ADP-TERMO DESCONTO
+          SINDICAL.pdf</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-001-ADP - FICHA DE CONTROLE DE PONTO EXTERNO.PDF"
+          download="FM-001-ADP - FICHA DE CONTROLE DE PONTO EXTERNO.PDF" type="aplication/pdf">FM-001-ADP - FICHA DE
+          CONTROLE DE PONTO EXTERNO.PDF</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0010-ADP-HAPVIDA_SOLICITAÇÃO.PDF"
+          download="FM-0010-ADP-HAPVIDA_SOLICITAÇÃO.PDF" type="aplication/pdf">FM-0010-ADP-HAPVIDA_SOLICITAÇÃO.PDF</a>
+      </div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0011-ADP- ATUALIZAÇÃO CADASTRAL E-SOCIAL.xls"
+          download="FM-0011-ADP- ATUALIZAÇÃO CADASTRAL E-SOCIAL.xls" type="aplication/xls">FM-0011-ADP- ATUALIZAÇÃO
+          CADASTRAL E-SOCIAL.xls</a></div>
+
+      <div class="filterDiv ADM Pessoal"><a
+          href="Documentos/ADMINISTRAÇÃO DE PESSOAL/FM-0017 - ADP - REGISTRO MANUAL DE HORAS EXTRAS.xlsx"
+          download="FM-0017 - ADP - REGISTRO MANUAL DE HORAS EXTRAS.xlsx" type="aplication/pdf">FM-0017 - ADP - REGISTRO
+          MANUAL DE HORAS EXTRAS.xlsx</a></div>
+
+      <!--Logotipos-->
+
+      <div class="filterDiv Logotipos"><a href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias2_Renault.png"
+          download="Marcas_GVS_Concessionarias2_Renault.png"
+          type="aplication/png">Marcas_GVS_Concessionarias2_Renault.png</a></div>
+      <div class="filterDiv Logotipos"><a href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Consorcio.png"
+          download="Marcas_GVS_Concessionarias_Consorcio.png"
+          type="aplication/png">Marcas_GVS_Concessionarias_Consorcio.png</a></div>
+      <div class="filterDiv Logotipos"><a href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Granvia.png"
+          download="Marcas_GVS_Concessionarias_Granvia.png" type="aplication/png">Marcas_GVS_Concessionarias_Granvia</a>
+      </div>
+      <div class="filterDiv Logotipos"><a
+          href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Granvia_SemiNovos.png"
+          download="Marcas_GVS_Concessionarias_Granvia_SemiNovos.png"
+          type="aplication/png">Marcas_GVS_Concessionarias_Granvia_SemiNovos.png</a></div>
+      <div class="filterDiv Logotipos"><a href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Intervia.png"
+          download="Marcas_GVS_Concessionarias_Intervia.png"
+          type="aplication/png">Marcas_GVS_Concessionarias_Intervia.png</a></div>
+      <div class="filterDiv Logotipos"><a href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Jeep.png"
+          download="Marcas_GVS_Concessionarias_Jeep.png" type="aplication/png">Marcas_GVS_Concessionarias_Jeep.png</a>
+      </div>
+      <div class="filterDiv Logotipos"><a
+          href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Nissan SemiNovos.png"
+          download="Marcas_GVS_Concessionarias_Nissan SemiNovos.png"
+          type="aplication/png">Marcas_GVS_Concessionarias_Nissan SemiNovos.png</a></div>
+      <div class="filterDiv Logotipos"><a href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Nissan.png"
+          download="Marcas_GVS_Concessionarias_Nissan.png"
+          type="aplication/png">Marcas_GVS_Concessionarias_Nissan.png</a></div>
+      <div class="filterDiv Logotipos"><a
+          href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_Renault SemiNovos.png"
+          download="Marcas_GVS_Concessionarias_Renault SemiNovos.png"
+          type="aplication/png">Marcas_GVS_Concessionarias_Renault SemiNovos.png</a></div>
+      <div class="filterDiv Logotipos"><a href="Documentos/LOGOTIPOS/LOGOTIPOS/Marcas_GVS_Concessionarias_ViaSul.png"
+          download="Marcas_GVS_Concessionarias_ViaSul.png"
+          type="aplication/png">Marcas_GVS_Concessionarias_ViaSul.png</a></div>
+
+      <!--Termos-->
+
+      <div class="filterDiv Termos"><a href="Documentos/TERMOS/TERMO_DE_RESPONSABILIDADE_-_COMPRA_EUROVIA[1].pdf"
+          download="TERMO_DE_RESPONSABILIDADE_-_COMPRA_EUROVIA[1].pdf"
+          type="aplication/pdf">TERMO_DE_RESPONSABILIDADE_-_COMPRA_EUROVIA[1].pdf</a></div>
+
+      <div class="filterDiv Termos"><a href="Documentos/TERMOS/TERMO_DE_RESPONSABILIDADE_-_COMPRA_GRANVIA[1].pdf"
+          download="TERMO_DE_RESPONSABILIDADE_-_COMPRA_GRANVIA[1].pdf"
+          type="aplication/pdf">TERMO_DE_RESPONSABILIDADE_-_COMPRA_GRANVIA[1].pdf</a></div>
+
+      <div class="filterDiv Termos"><a href="Documentos/TERMOS/TERMO_DE_RESPONSABILIDADE_-_COMPRA_VIA_SUL[1].pdf"
+          download="TERMO_DE_RESPONSABILIDADE_-_COMPRA_VIA_SUL[1].pdf"
+          type="aplication/pdf">TERMO_DE_RESPONSABILIDADE_-_COMPRA_VIA_SUL[1].pdf</a></div>
+
+      <div class="filterDiv Termos"><a href="Documentos/TERMOS/TERMO_DE_RESPONSABILIDADE_-_Venda_Eurovia[1].pdf"
+          download="TERMO_DE_RESPONSABILIDADE_-_Venda_Eurovia[1].pdf"
+          type="aplication/pdf">TERMO_DE_RESPONSABILIDADE_-_Venda_Eurovia[1].pdf</a></div>
+
+      <div class="filterDiv Termos"><a href="Documentos/TERMOS/TERMO_DE_RESPONSABILIDADE_-_Venda_Granvia[1].pdf"
+          download="TERMO_DE_RESPONSABILIDADE_-_Venda_Granvia[1].pdf"
+          type="aplication/pdf">TERMO_DE_RESPONSABILIDADE_-_Venda_Granvia[1].pdf</a></div>
+
+      <div class="filterDiv Termos"><a href="Documentos/TERMOS/TERMO_DE_RESPONSABILIDADE_-_Venda_Via_Sul[1].pdf"
+          download="TERMO_DE_RESPONSABILIDADE_-_Venda_Via_Sul[1].pdf"
+          type="aplication/pdf">TERMO_DE_RESPONSABILIDADE_-_Venda_Via_Sul[1].pdf</a></div>
+
+      <div class="filterDiv Termos"><a href="Documentos/TERMOS/PROC_+_REQUERIMENTO_-_VU[1].pdf"
+          download="TERMOS/PROC_+_REQUERIMENTO_-_VU[1].pdf"
+          type="aplication/pdf">TERMOS/PROC_+_REQUERIMENTO_-_VU[1].pdf</a></div>
+
+      <!--CheckList-->
+
+      <div class="filterDiv CheckList"><a href="Documentos/CHECKLIST/CHECK_LIST_AVALIAÇÃO_-_VU[1].pdf"
+          download="CHECK_LIST_AVALIAÇÃO_-_VU[1].pdf" type="aplication/pdf">CHECK_LIST_AVALIAÇÃO_-_VU[1].pdf</a></div>
+
+      <div class="filterDiv CheckList"><a href="Documentos/CHECKLIST/CHECK_LIST_CLIENTE[1].pdf"
+          download="CHECK_LIST_CLIENTE[1].pdf" type="aplication/pdf">CHECK_LIST_CLIENTE[1].pdf</a></div>
+
+      <div class="filterDiv CheckList"><a href="Documentos/CHECKLIST/CHECK_LIST_EQUIPE_VENDAS[1].pdf"
+          download="CHECK_LIST_EQUIPE_VENDAS[1].pdf" type="aplication/pdf">CHECK_LIST_EQUIPE_VENDAS[1].pdf</a></div>
+
+      <!--Dados das Empresas-->
+
+      <div class="filterDiv Dados Empresa"><a href="Documentos/Dados das Empresas/Grupo Via sul - Operacionais (1).xlsx"
+          download="Grupo Via sul - Operacionais (1).xlsx" type="aplication/xlsx">Grupo Via sul - Operacionais
+          (1).xlsx</a></div>
+
+
+      <div class="filterDiv CheckList"><a href="" download="" type="aplication/pdf"></a></div>
+
+
+
+
+
+    </div>
+
+    <script>
+      filterSelection("all")
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+  </div>
+
+
+</body>
+<script src="/js/sidebar.js"></script>
+
+</html>
